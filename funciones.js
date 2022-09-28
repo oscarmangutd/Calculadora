@@ -1,3 +1,4 @@
+"use strict";
 /************************
  * Funciones
  * let sumar = function (a, b, c = 3) {
@@ -23,8 +24,8 @@ console.log(factorial(5));
  * Arrays
  * */
 
-let nombres = ['Oscar', 'Raul', 'Teresa', 'Maria Jesús'];
-let vegetales = new Array('Tomate', 'Lechuga', 'Zanahoria');
+let nombres = ["Oscar", "Raul", "Teresa", "Maria Jesús"];
+let vegetales = new Array("Tomate", "Lechuga", "Zanahoria");
 
 /*
 console.log(nombres[3]);
@@ -50,15 +51,13 @@ vegetales.forEach(function(elemento, indice){
 */
 
 console.log(nombres);
-nombres.push('Jaime'); //Añadimos un nuevo elemento a nuestro array
+nombres.push("Jaime"); //Añadimos un nuevo elemento a nuestro array
 console.log(nombres);
-nombres.unshift('Luispe');
-console.log(nombres);//Añadimos un nuevo elemento al array al principio
+nombres.unshift("Luispe");
+console.log(nombres); //Añadimos un nuevo elemento al array al principio
 
-let pos = nombres.indexOf('Raul');
+let pos = nombres.indexOf("Raul");
 console.log(pos); //Devuelve la posición de un elemento del array
-
 
 nombres.splice(1, 1); //A partir del elemento 1 borra 1 elemento
 console.log(nombres);
-
